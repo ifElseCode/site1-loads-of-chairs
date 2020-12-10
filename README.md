@@ -15,31 +15,31 @@ In GitHub, click the green "Code" button and copy the URL that is shown in the l
 In your terminal, type this command: git clone <URL>. The is the URL you copied from GitHub. Paste that into the command and then hit enter. Well done, you've cloned this repo!
 
 5. Check that the Files Have Been Successfully Cloned
-In the folder you created (called projects, in the suggestion we gave), you should now see another folder that was previously not there, called projectBlog. Open this folder and compare what you see here with the files and folders you see listed in the remote repo on GitHib.
+In the folder you created (called projects, in the suggestion we gave), you should now see another folder that was previously not there, called site1-loads-of-chairs. Open this folder and compare what you see here with the files and folders you see listed in the remote repo on GitHib.
 
 6. Summary
 You now have a local clone of the remote repo. Changing the code that you've cloned won't effect the remote repo unless you push to it. But be careful when doing this, as you should run any major changes by your team members before changing the remote repo.
 
-How to Run projectBlog
+How to Run site1-loads-of-chairs
 Follow these steps to ensure you have all the correct packages/modules installed. You can also watch this video to see what to do in action.
 
-1. Make Sure You Have Cloned projectBlog to Your Computer
-If you haven't yet cloned the projectBlog repo to your computer, follow the steps listed under "How to Clone This Repository". To make sure this has been done correctly, compare what you see in your projectBlog folder with what you see in this remote repo.
+1. Make Sure You Have Cloned site1-loads-of-chairs to Your Computer
+If you haven't yet cloned the site1-loads-of-chairs repo to your computer, follow the steps listed under "How to Clone This Repository". To make sure this has been done correctly, compare what you see in your site1-loads-of-chairs folder with what you see in this remote repo.
 
-2. Open projectBlog in Your Text Editor
-Open the projectBlog folder in your text editor. This will allow you to see all the files and folders within projectBlog in your text editor's working area.
+2. Open site1-loads-of-chairs in Your Text Editor
+Open the site1-loads-of-chairs folder in your text editor. This will allow you to see all the files and folders within site1-loads-of-chairs in your text editor's working area.
 
-3. Navigate to projectBlog in Your Terminal
-In your terminal, make sure your "working directory" is pointing to the projectBlog folder, wherever you have placed this. This will be the same as step 2 in "How to Clone This Repoisitory".
+3. Navigate to site1-loads-of-chairs in Your Terminal
+In your terminal, make sure your "working directory" is pointing to the site1-loads-of-chairs folder, wherever you have placed this. This will be the same as step 2 in "How to Clone This Repoisitory".
 
 4. Install NPM Packages
-In your terminal, type the command npm install and then hit enter/return. This will install all the modules/packages that this project depends on. You'll see a folder titled "node_modules" in your projectBlog folder if this has been done succesfully. There is no need for you to enter this folder or edit any files here.
+In your terminal, type the command npm install and then hit enter/return. This will install all the modules/packages that this project depends on. You'll see a folder titled "node_modules" in your site1-loads-of-chairs folder if this has been done succesfully. There is no need for you to enter this folder or edit any files here.
 
 5. Run the Project
-To ensure that everything installed correctly, type npm run dev in your terminal and hit enter. Your terminal will return "Server is running on http://localhost:3000". Then, open your browser and type "localhost:3000". This will navigate to the home page of projectBlog and means that your computer is hosting this app/site, which your browser is accessing locally. Any changes you then save will restart the server and reflect after you have refreshed your browser.
+To ensure that everything installed correctly, type npm run dev in your terminal and hit enter. Your terminal will return "Server is running on http://localhost:3000". Then, open your browser and type "localhost:3000". This will navigate to the home page of site1-loads-of-chairs and means that your computer is hosting this app/site, which your browser is accessing locally. Any changes you then save will restart the server and reflect after you have refreshed your browser.
 
-6. Make Changes to projectBlog
-To make sure that projectBlog is working as it should, make some changes to a file and save these. Refresh your browser and you will see the changes that you made. If this doesn't work, you may have to go back to step 4.
+6. Make Changes to site1-loads-of-chairs
+To make sure that site1-loads-of-chairs is working as it should, make some changes to a file and save these. Refresh your browser and you will see the changes that you made. If this doesn't work, you may have to go back to step 4.
 
 Git Workflow
 Note: everything within angled brackets (eg, <filename>) refers to text that you will change depending on the context. They serve as a placeholder. In this tutorial, the name feature/myBranch is a generic term we have given for the sake of this tutorial. You will want to check with your team what system you have in place for naming your branches. To see this workflow in action, watch this video.
