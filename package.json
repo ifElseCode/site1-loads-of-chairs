@@ -1,0 +1,28 @@
+{
+  "name": "site1-loads-of-chairs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "",
+    "build": "",
+    "production":""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifElse-Code/site1-loads-of-chairs.git"
+  },
+  "author": "ifElse-Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifElse-Code/site1-loads-of-chairs/issues"
+  },
+  "homepage": "https://github.com/ifElse-Code/site1-loads-of-chairs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
