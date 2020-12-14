@@ -13,6 +13,8 @@ const port = parseInt(process.env.PORT, 10) || 3000
 app.use(express.static('public'));
 // enable cors
 app.use(cors())
+//set the path to views folder
+app.set('views', __dirname + '/views')
 
 // API routes
 app.get('/', (req, res) => {

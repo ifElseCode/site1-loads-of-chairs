@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "npm install && nodemon app.js",
+    "dev": "nodemon app.js",
     "start": "node .",
     "test": "",
     "build": "",
