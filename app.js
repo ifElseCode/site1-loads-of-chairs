@@ -7,10 +7,25 @@ const path = require('path') // utilities for working with file and directory pa
 const cors = require('cors')
 const bodyParser = require('body-parser') // parse request body
 const dotenv = require('dotenv').config()
+const {auth} = require('express-openid-connect');
+const { requiresAuth } = require('express-openid-connect');
 
 // initialize express
 const app = express()
 const port = parseInt(process.env.PORT, 10) || 3000
+
+//Auth0 openID
+const config = {
+    authRequired: false,
+    auth0Logout: true,
+    secret: 'a long, randomly-generated string stored in env',
+    baseURL: 'http://localhost:3000',
+    clientID: 'HSQSHlA5GCFNtRArVJA8MLmdLZ36LYhu',
+    issuerBaseURL: 'https://chair-site.us.auth0.com'
+  };
+  
+  // auth router attaches /login, /logout, and /callback routes to the baseURL
+  app.use(auth(config));
 
 /**
  * Middleware
@@ -46,6 +61,9 @@ app.get('/', (req, res) => {
     res.send('Welcome to Site1-loads-of-chairs!')
 })
 
+app.get('/profile', requiresAuth(), (req, res) => {
+    res.send(JSON.stringify(req.oidc.user));
+  });
 
 /**
  *  Handle Errors
