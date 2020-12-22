@@ -1,0 +1,773 @@
+/* SITE COLORS
+#463f3aff -- Font color
+#bcb8b1ff -- this is a catch all, the footer has a similar color. use as needed.
+#f4f3eeff -- replaces the default white background color
+#e0afa0ff -- the melon color will act as the accent color in most of the borders of the original site.
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ body {
+   margin: 0;
+   padding: 0;
+   background: #f4f3eeff;
+ }
+ input:focus { outline: none;}
+ /* Set all img tags to width:100%; */
+ body img { width:100%;}
+ .main-container {
+   width:100%; min-height: 100vh; height: auto; font-family: 'Taviraj', serif;
+ }
+ .main-header {
+   width:100%; height: 160px;
+   float: left; position: fixed;
+   box-shadow: 0 4px 5px -2px gray; background: #f4f3eeff;
+ }
+ .logo-box {
+   width:60%; margin: 0 auto; padding-top: 5vh;
+ }
+ .header-menu-box, .header-bag-box {
+   position: absolute; top: 6.8vh;
+   width:35px;
+ }
+ .header-menu-box {left: 20px;}
+ .header-bag-box { right: 20px; width:35px;}
+
+ .header-search-wrapper {
+   width:90%; height: 100px;
+   position: relative; margin: 0 auto; margin-top: 10px;
+   text-align: center;
+ }
+ .header-search-wrapper input {
+   width:95%; height: 20px;
+   border-radius: 50px;
+   border: 2.5px solid #e0afa0;
+   padding: 5px 1%;
+   background-color: #f4f3ee;
+   font-size: 1em;
+ }
+
+
+ .header-search-wrapper img {
+   position: absolute; right: 0; top: -5px;
+   width: 45px;
+ }
+
+ .main-content {
+   width:100%; min-height: 100vh;
+   float: left; margin-top: 150px;
+   text-align: center;
+ }
+ .plp-page-title {
+   font-weight: 100;
+ }
+
+ .page-subnav {
+   width: 90%; height: auto; min-height: 60px;
+   display: inline-block;
+   color: rgba(103, 128, 159, .3);
+ }
+ .page-sublinks {
+   width: 30%; height: 20px;
+   display: inline-grid;
+   font-size: .8em;
+   text-decoration: none;
+   color: #463f3aff;
+ }
+ .page-sublinks:hover { color:#e0afa0ff; cursor: pointer;}
+
+ .plp-section {
+   width:90%; min-height: 100vh;
+   margin: 0 auto; margin-top: 50px;
+   display: flex; justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ .plp-card {
+   min-width:45%; height: auto; min-height: 50px;
+   display: inline-block; flex-basis: 45%;
+   transition: all ease 150ms;
+ }
+ .plp-card:hover {
+   cursor: pointer;
+   color: #3e7eff;
+ }
+ .plp-image { width:100%; height: auto;}
+ .plp-product-name { margin-bottom: 0;}
+ .plp-product-price { margin-top: 0;}
+
+ .contact-sub-section{
+   text-align: left;
+   width:90%; min-height: 150px;
+   margin: 0 auto;
+   margin-bottom: 80px;
+ }
+ .contact-page-title {
+   margin-top: 100px;
+   font-weight: 100;
+ }
+ .contact-subheads { font-size: 1.3em;}
+ .contact-subheads-h3 { font-size: 1em; margin-bottom: 0; margin-top: 0;}
+ .contact-subheads, .contact-text { margin: 10px 0;}
+ .single-line-text { margin-bottom: 15px;}
+ .contact-links{
+   color: #463f3aff;
+   border-bottom: 2px solid #e0afa0ff;
+   text-decoration: none;
+   transition: all ease 150ms;
+ }
+ .contact-links:hover {
+   color: #3e7eff;
+   border-bottom: none;
+ }
+
+ .contact-text { margin-top: 5px;}
+
+ .contact-form-labels {
+   width: 100%;
+   float: left;
+   font-size: .9em;
+   text-align: left;
+   margin-bottom: 3px;
+ }
+ .contact-inputs, .contact-textarea {
+   width: 100%; height: 35px;
+   float: left; margin-bottom: 20px;
+   border-radius: 5px; border: 1px solid gray;
+ }
+ .contact-textarea { height: 250px; }
+ .contact-form-bttn {
+   width: 100px; height: 40px;
+   background-color: #e0afa0ff;
+   border: none;
+   font-size: 1em;
+   font-weight: 100;
+   border-radius: 5px;
+   transition: all ease 150ms;
+ }
+ .contact-form-bttn:hover {
+   background-color: #463f3aff;
+   color: #f4f3eeff;
+   cursor: pointer;
+ }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f3eeff;
+  }
+  input:focus { outline: none;}
+  /* Set all img tags to width:100%; */
+  body img { width:100%;}
+  .main-container {
+    width:100%; min-height: 100vh; height: auto; font-family: 'Taviraj', serif;
+  }
+  .main-header {
+    width:100%; height: 70px;
+    float: left; position: fixed;
+    box-shadow: 0 4px 5px -2px gray; background: #f4f3eeff;
+  }
+  .logo-box {
+    width:30%; max-width: 250px; float: left; padding-top: 3vh; margin-left: 3%;
+  }
+  .header-menu-box, .header-bag-box {
+    position: absolute; top: 6.8vh;
+    width:35px;
+  }
+  .header-menu-box {left: 20px; display: none;}
+  .header-bag-box { right: 20px; width:35px; top: 4vh;}
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    float: right;
+    position: relative; margin: 0 auto; margin-top: 4vh; margin-right: 60px;
+    text-align: center;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 50px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: -5px; top: -5px;
+    width: 45px;
+  }
+
+  .main-content {
+    width:100%; min-height: 100vh;
+    float: left; margin-top: 120px;
+    text-align: center;
+  }
+  .plp-page-title {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  /* PLP Styling */
+  .page-subnav {
+    width: 90%; height: auto; min-height: 60px;
+    display: inline-block;
+    color: rgba(103, 128, 159, .3);
+  }
+  .page-sublinks {
+    width: 30%; height: 20px;
+    display: inline-grid;
+   font-size: .9em;
+    text-decoration: none;
+    color: #463f3aff;
+  }
+  .page-sublinks:hover { color:#e0afa0ff; cursor: pointer;}
+
+  .plp-section {
+    width:90%; min-height: 100vh;
+    margin: 0 auto; margin-top: 50px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .plp-card {
+    min-width:45%; height: auto; min-height: 50px;
+    display: inline-block; flex-basis: 45%;
+    transition: all ease 150ms;
+  }
+  .plp-card:hover {
+    cursor: pointer;
+    color: #3e7eff;
+  }
+  .plp-image { width:100%; height: auto;}
+  .plp-product-name { margin-bottom: 0;}
+  .plp-product-price { margin-top: 0;}
+
+  .contact-sub-section{
+    text-align: left;
+    width:90%; min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .contact-page-title {
+    margin-top: 100px;
+    font-weight: 100;
+  }
+  .contact-subheads { font-size: 1.3em;}
+  .contact-subheads-h3 { font-size: 1em; margin-bottom: 0;}
+  .contact-subheads, .contact-text { margin: 10px 0;}
+  .single-line-text { margin-bottom: 10px;}
+  .contact-links{
+    color: #463f3aff;
+    border-bottom: 2px solid #e0afa0ff;
+    text-decoration: none;
+    transition: all ease 150ms;
+  }
+  .contact-links:hover {
+    color: #3e7eff;
+    border-bottom: none;
+  }
+
+  .contact-sub-section p { margin-top: 5px;}
+  .contact-sub-section h3 { margin-top: 0;}
+
+  .contact-form-labels {
+    width: 100%;
+    float: left;
+    font-size: .9em;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  .contact-inputs, .contact-textarea {
+    width: 100%; height: 35px;
+    float: left; margin-bottom: 20px;
+    border-radius: 5px; border: 1px solid gray;
+  }
+  .contact-textarea { height: 250px; }
+  .contact-form-bttn {
+    width: 100px; height: 40px;
+    background-color: #e0afa0ff;
+    border: none;
+    font-size: 1em;
+    font-weight: 100;
+    border-radius: 5px;
+    transition: all ease 150ms;
+  }
+  .contact-form-bttn:hover {
+    background-color: #463f3aff;
+    color: #f4f3eeff;
+    cursor: pointer;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f3eeff;
+  }
+  input:focus { outline: none;}
+  /* Set all img tags to width:100%; */
+  body img { width:100%;}
+  .main-container {
+    width:100%; min-height: 100vh; height: auto; font-family: 'Taviraj', serif;
+  }
+  .main-header {
+    width:100%; height: 80px;
+    float: left; position: fixed;
+    box-shadow: 0 4px 5px -2px gray; background: #f4f3eeff;
+  }
+  .logo-box {
+    width:30%; max-width: 250px; float: left; padding-top: 3vh; margin-left: 3%;
+  }
+  .header-menu-box, .header-bag-box {
+    position: absolute; top: 6.8vh;
+    width:35px;
+  }
+  .header-menu-box {left: 20px; display: none;}
+  .header-bag-box { right: 20px; width:35px; top: 4vh;}
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    float: right;
+    position: relative; margin: 0 auto; margin-top: 4vh; margin-right: 60px;
+    text-align: center;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 50px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: -5px; top: -5px;
+    width: 45px;
+  }
+  .main-content {
+    width:100%; min-height: 100vh;
+    float: left; margin-top: 120px;
+    text-align: center;
+  }
+  .plp-page-title {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  /* PLP Styling */
+  .page-subnav {
+    width: 90%; height: auto; min-height: 10px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5% 30px;
+    color: rgba(103, 128, 159, .3);
+    background-color: #e0afa0ff;
+  }
+  .plp-subnav-slash { display: none;}
+  .page-sublinks {
+    width: auto; height: 20px;
+    display: inline-block; flex-basis: auto;
+    font-size: .9em;
+    text-decoration: none;
+    color: #463f3aff;
+    margin: 5px;
+    font-weight: 500;
+  }
+  .page-sublinks:hover { color:#fff; cursor: pointer;}
+
+  .plp-section {
+    width:90%; min-height: 100vh;
+    margin: 0 auto; margin-top: 50px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .plp-card {
+    min-width:45%; height: auto; min-height: 50px;
+    display: inline-block; flex-basis: 45%;
+    transition: all ease 150ms;
+  }
+  .plp-card:hover {
+    cursor: pointer;
+    color: #3e7eff;
+  }
+  .plp-image { width:100%; height: auto;}
+  .plp-product-name { margin-bottom: 0;}
+  .plp-product-price { margin-top: 0;}
+
+  .contact-sub-section{
+    text-align: left;
+    width:75%; min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .contact-page-title {
+    margin-top: 100px;
+    font-weight: 100;
+  }
+  .contact-subheads { font-size: 1.3em;}
+  .contact-subheads-h3 { font-size: 1em; margin-bottom: 0;}
+  .contact-subheads, .contact-text { margin: 10px 0;}
+  .single-line-text { margin-bottom: 10px;}
+  .contact-links{
+    color: #463f3aff;
+    border-bottom: 2px solid #e0afa0ff;
+    text-decoration: none;
+    transition: all ease 150ms;
+  }
+  .contact-links:hover {
+    color: #3e7eff;
+    border-bottom: none;
+  }
+
+  .contact-sub-section p { margin-top: 5px;}
+  .contact-sub-section h3 { margin-top: 0;}
+
+  .contact-form-labels {
+    width: 100%;
+    float: left;
+    font-size: .9em;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  .contact-inputs, .contact-textarea {
+    width: 100%; height: 35px;
+    float: left; margin-bottom: 20px;
+    border-radius: 5px; border: 1px solid gray;
+  }
+  .contact-textarea { height: 250px; }
+  .contact-form-bttn {
+    width: 100px; height: 40px;
+    background-color: #e0afa0ff;
+    border: none;
+    font-size: 1em;
+    font-weight: 100;
+    border-radius: 5px;
+    transition: all ease 150ms;
+  }
+  .contact-form-bttn:hover {
+    background-color: #463f3aff;
+    color: #f4f3eeff;
+    cursor: pointer;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f3eeff;
+  }
+  input:focus { outline: none;}
+  /* Set all img tags to width:100%; */
+  body img { width:100%;}
+  .main-container {
+    width:100%; min-height: 100vh; height: auto; font-family: 'Taviraj', serif;
+  }
+  .main-header {
+    width:100%; height: 80px;
+    float: left; position: fixed;
+    box-shadow: none; background: #f4f3eeff;
+    z-index: +1;
+  }
+  .logo-box {
+    width:30%; max-width: 250px; float: left; padding-top: 3vh; margin-left: 3%;
+  }
+  .header-menu-box, .header-bag-box {
+    position: absolute; top: 6.8vh;
+    width:35px;
+  }
+  .header-menu-box {left: 20px; display: none;}
+  .header-bag-box { right: 20px; width:35px; top: 4vh;}
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    float: right;
+    position: relative; margin: 0 auto; margin-top: 4vh; margin-right: 60px;
+    text-align: center;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 50px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: -5px; top: -5px;
+    width: 45px;
+  }
+  .main-content {
+    width:100%; min-height: 100vh;
+    float: left; margin-top: 120px;
+    text-align: center;
+  }
+  .plp-page-title {
+    font-weight: 100;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  /* PLP Styling */
+  .page-subnav {
+    width: 90%; height: auto; min-height: 10px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5% 30px;
+    color: rgba(103, 128, 159, .3);
+    background-color: #e0afa0ff;
+    position: absolute; top: 90px;
+  }
+  .plp-subnav-slash { display: none;}
+  .page-sublinks {
+    width: auto; height: 20px;
+    display: inline-block; flex-basis: auto;
+    font-size: .9em;
+    text-decoration: none;
+    color: #463f3aff;
+    margin: 5px;
+    font-weight: 500;
+  }
+  .page-sublinks:hover { color:#fff; cursor: pointer;}
+
+  .plp-section {
+    width:90%; min-height: 100vh;
+    margin: 0 auto; margin-top: 50px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .plp-card {
+    min-width:30%; height: auto; min-height: 50px;
+    display: inline-block; flex-basis: 30%;
+    transition: all ease 150ms;
+  }
+  .plp-card:hover {
+    cursor: pointer;
+    color: #3e7eff;
+  }
+  .plp-image { width:100%; height: auto;}
+  .plp-product-name { margin-bottom: 0;}
+  .plp-product-price { margin-top: 0;}
+
+  .contact-sub-section{
+    text-align: left;
+    width:60%; min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .contact-page-title {
+    margin-top: 100px;
+    font-weight: 100;
+  }
+  .contact-subheads { font-size: 1.3em;}
+  .contact-subheads-h3 { font-size: 1em; margin-bottom: 0;}
+  .contact-subheads, .contact-text { margin: 10px 0;}
+  .single-line-text { margin-bottom: 10px;}
+  .contact-links{
+    color: #463f3aff;
+    border-bottom: 2px solid #e0afa0ff;
+    text-decoration: none;
+    transition: all ease 150ms;
+  }
+  .contact-links:hover {
+    color: #3e7eff;
+    border-bottom: none;
+  }
+
+  .contact-sub-section p { margin-top: 5px;}
+  .contact-sub-section h3 { margin-top: 0;}
+
+  .contact-form-labels {
+    width: 100%;
+    float: left;
+    font-size: .9em;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  .contact-inputs, .contact-textarea {
+    width: 100%; height: 35px;
+    float: left; margin-bottom: 20px;
+    border-radius: 5px; border: 1px solid gray;
+  }
+  .contact-textarea { height: 250px; }
+  .contact-form-bttn {
+    width: 100px; height: 40px;
+    background-color: #e0afa0ff;
+    border: none;
+    font-size: 1em;
+    font-weight: 100;
+    border-radius: 5px;
+    transition: all ease 150ms;
+  }
+  .contact-form-bttn:hover {
+    background-color: #463f3aff;
+    color: #f4f3eeff;
+    cursor: pointer;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f4f3eeff;
+  }
+  input:focus { outline: none;}
+  /* Set all img tags to width:100%; */
+  body img { width:100%;}
+  .main-container {
+    width:100%; min-height: 100vh; height: auto; font-family: 'Taviraj', serif;
+  }
+  .main-header {
+    width:100%; min-height: 80px; height: 8vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: fixed; left: 0; right: 0;
+    box-shadow: none; background: #f4f3eeff;
+    z-index: +1;
+  }
+  .logo-box {
+    width:30%; max-width: 250px; float: left; padding-top: 3vh; margin-left: 3%;
+  }
+  .header-menu-box, .header-bag-box {
+    position: absolute; top: 6.8vh;
+    width:35px;
+  }
+  .header-menu-box {left: 20px; display: none;}
+  .header-bag-box { right: 20px; width:35px; top: 4vh;}
+
+  .header-search-wrapper {
+    width:30%; height: 100px;
+    float: right;
+    position: relative; margin: 0 auto; margin-top: 4vh; margin-right: 60px;
+    text-align: center;
+  }
+  .header-search-wrapper input {
+    width:100%; height: 35px;
+    border-radius: 50px;
+    border: 2.5px solid #e0afa0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f4f3ee;
+    font-size: 1em;
+  }
+  .header-search-wrapper img {
+    position: absolute; right: -5px; top: -5px;
+    width: 45px;
+  }
+  .main-content {
+    width:100%; min-height: 100vh;
+    float: left; margin-top: 120px;
+    text-align: center;
+  }
+  .plp-page-title {
+    font-weight: 100;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  /* PLP Styling */
+  .page-subnav {
+    width: 80%; height: auto; min-height: 10px;
+    max-width: 1400px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10% 30px;
+    color: rgba(103, 128, 159, .3);
+    background-color: #e0afa0ff;
+    margin: 0 auto;
+    position: absolute; top: 100px; right: 0; left: 0;
+  }
+  .plp-subnav-slash { display: none;}
+  .page-sublinks {
+    width: auto; height: 20px;
+    display: inline-block; flex-basis: auto;
+    font-size: .9em;
+    text-decoration: none;
+    color: #463f3aff;
+    margin: 5px;
+    font-weight: 500;
+  }
+  .page-sublinks:hover { color:#fff; cursor: pointer;}
+
+  .plp-section {
+    width:90%; min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto; margin-top: 50px;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .plp-card {
+    min-width:30%; height: auto; min-height: 50px;
+    display: inline-block; flex-basis: 30%;
+    transition: all ease 150ms;
+  }
+  .plp-card:hover {
+    cursor: pointer;
+    color: #3e7eff;
+  }
+  .plp-image { width:100%; height: auto;}
+  .plp-product-name { margin-bottom: 0;}
+  .plp-product-price { margin-top: 0;}
+
+  .contact-sub-section{
+    text-align: left;
+    width:50%; min-height: 150px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .contact-page-title {
+    margin-top: 100px;
+    font-weight: 100;
+  }
+  .contact-subheads { font-size: 1.3em;}
+  .contact-subheads-h3 { font-size: 1em; margin-bottom: 0;}
+  .contact-subheads, .contact-text { margin: 10px 0;}
+  .single-line-text { margin-bottom: 10px;}
+  .contact-links{
+    color: #463f3aff;
+    border-bottom: 2px solid #e0afa0ff;
+    text-decoration: none;
+    transition: all ease 150ms;
+  }
+  .contact-links:hover {
+    color: #3e7eff;
+    border-bottom: none;
+  }
+
+  .contact-sub-section p { margin-top: 5px;}
+  .contact-sub-section h3 { margin-top: 0;}
+
+  .contact-form-labels {
+    width: 100%;
+    float: left;
+    font-size: .9em;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  .contact-inputs, .contact-textarea {
+    width: 100%; height: 35px;
+    float: left; margin-bottom: 20px;
+    border-radius: 5px; border: 1px solid gray;
+  }
+  .contact-textarea { height: 250px; }
+  .contact-form-bttn {
+    width: 100px; height: 40px;
+    background-color: #e0afa0ff;
+    border: none;
+    font-size: 1em;
+    font-weight: 100;
+    border-radius: 5px;
+    transition: all ease 150ms;
+  }
+  .contact-form-bttn:hover {
+    background-color: #463f3aff;
+    color: #f4f3eeff;
+    cursor: pointer;
+  }
+}
