@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+      body {
+    background-color: #bcb8b1ff;
+    font-size: 16px;
+    color: #463f3aff;
+}
+    </style>
+  </head>
+
+<body>
+
+    <!-- Start of container for main body area -->
+    <div class="container">
+    
+    <!-- The div id="chartContainer" is (required) code for the graph, the styles are inline attributed, hence not included in the stylesheet -->
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+    <div>
+    <!-- Components; Collapse; (Example): https://getbootstrap.com/docs/5.0/components/collapse/ -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#customerControl" aria-expanded="false" aria-controls="collapseExample">
+        Customer Control
+    </button>
+    <div class="collapse" id="customerControl">
+      <div class="card card-body">
+      <ul>
+      <li>Show number of categories</li>
+      <li>Show all categories</li>
+      <li>Create a category</li>
+      <li>Select a category</li>
+      <li>Update a category</li>
+      <li>Delete a category</li>
+      <li>Show all products within a category</li>
+      <li>Show number of products within a category</li>
+    </ul>
+    </div>
+   </div>
+
+   <!-- Components; Collapse; (Example): https://getbootstrap.com/docs/5.0/components/collapse/ -->
+   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ordersControl" aria-expanded="false" aria-controls="collapseExample">
+    Orders Control
+   </button>
+   <div class="collapse" id="ordersControl">
+    <div class="card card-body">
+      <ul>
+      <li>Show all orders</li>
+      <li>Show number of orders</li>
+      <li>Create an order</li>
+      <li>Show a order</li>
+      <li>Update a order</li>
+      <li>Delete a order</li>
+      <li>Show all product within a order</li>
+      <li>Show number of products within a order</li>
+    </ul>
+    </div>
+   </div>
+
+   <!-- Components; Collapse; (Example): https://getbootstrap.com/docs/5.0/components/collapse/ -->
+   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#categoryControl" aria-expanded="false" aria-controls="collapseExample">
+    Category Control
+   </button>
+   <div class="collapse" id="categoryControl">
+    <div class="card card-body">
+      <li>Show number of categories</li>
+      <li>Show all categories</li>
+      <li>Create a category</li>
+      <li>Select a category</li>
+      <li>Update a category</li>
+      <li>Delete a category</li>
+      <li>Show all products within a category</li>
+      <li>Show number of products within a category  </li>
+    </div>
+   </div>
+
+   <!-- Components; Collapse; (Example): https://getbootstrap.com/docs/5.0/components/collapse/ -->
+   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#productControl" aria-expanded="false" aria-controls="collapseExample">
+    Product Control
+  </button>
+  <div class="collapse" id="productControl">
+   <div class="card card-body">
+    <li>Show number of products</li>
+    <li>Show a product</li>
+    <li>Update a product</li>
+    <li>Delete a product</li>
+   </div>
+  </div>
+</div>
+    
+    <!-- End of container for main body area -->
+    </div>
+
+<!-- The Bootstrap JavaScript all-in-one code bundle (required for JS built in bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- The specific chart below was built by CanvasJS, link for code editing references to this chart: https://canvasjs.com/javascript-charts/responsive-chart/ -->
+<script type="text/javascript">
+    window.onload = function () {
+        CanvasJS.addColorSet("greyShades",
+                [//colorSet Array
+                "#463f3aff",
+                "#bcb8b1ff",
+                "#463f3aff",
+                "#bcb8b1ff",
+                "#463f3aff",
+                "#bcb8b1ff",
+                "#463f3aff",
+                "#bcb8b1ff",
+                "#463f3aff",
+                "#bcb8b1ff",
+                "#463f3aff",
+                "#bcb8b1ff"                
+                ]);
+    var chart = new CanvasJS.Chart("chartContainer", 
+    {
+        animationEnabled: true,
+        backgroundColor: "#f4f3eeff",
+        colorSet: "greyShades",
+        title: {
+            text: "Total of orders per month (2020)",
+            fontColor: "#463f3aff",
+            fontFamily: "Taviraj",
+        },
+        axisY: {
+            title: "Number of sales",
+            suffix: " orders",
+            titleFontColor: "#463f3aff",
+            titleFontWeight: "bold",
+            titleFontFamily: "Taviraj"
+        },
+        axisX: {
+            title: "Months",
+            titleFontColor: "#463f3aff",
+            titleFontWeight: "bold",
+            titleFontFamily: "Taviraj"
+        },
+        data: [{
+            type: "column",
+            yValueFormatString: "# \"orders\"",
+            dataPoints: [
+                { label: "January", y: 7 },	
+                { label: "Febuary", y: 16 },	
+                { label: "March", y: 19 },
+                { label: "April", y: 20 },	
+                { label: "May", y: 2 },
+                { label: "June", y: 4 },
+                { label: "July", y: 3 },
+                { label: "August", y: 18 },
+                { label: "September", y: 2 },
+                { label: "October", y: 7 },
+                { label: "November", y: 9 },
+                { label: "December", y: 23 }
+            ]
+        }]
+    });
+    chart.render();
+    
+    }
+    </script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  </body>
+</html>
